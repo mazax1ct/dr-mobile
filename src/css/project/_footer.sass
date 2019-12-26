@@ -1,0 +1,78 @@
+.footer
+  bottom: 0
+  background-color: #191919
+  box-shadow: 0 -4px 10px 0 rgba(0,0,0,0.3)
+  border-top: 1px solid #333
+  display: flex
+  height: 60px
+  left: 0
+  position: fixed
+  top: auto
+  width: 100%
+  z-index: 5
+
+  &__price-block
+    margin-right: auto
+    padding-top: 9px
+    padding-left: 15px
+
+  &__price
+    color: #fff
+    font-family: 'Russo One'
+    font-size: 20px
+    font-weight: 700
+    line-height: 29px
+    text-transform: uppercase
+    white-space: nowrap
+
+    @media(min-width: 375px)
+      font-size: 24px
+
+  &__price-currency
+    color: #666
+
+  &__month-price
+    color: #8B8B8B
+    font-size: 13px
+    line-height: 15px
+
+  &__button
+    align-items: center
+    background: none
+    border: none
+    color: #fff
+    cursor: pointer
+    display: flex
+    justify-content: center
+    min-width: 50px
+    width: 50px
+
+    &--graphs
+      padding-right: 8px
+      padding-left: 20px
+
+      .footer__button-icon
+        height: 15px
+        width: 22px
+
+    &--save
+      padding-right: 20px
+      padding-left: 8px
+
+      .footer__button-icon
+        height: 20px
+        width: 20px
+
+  &__button-icon
+    fill: #fff
+
+  &__buy-button
+    align-items: center
+    background-color: #DF4834
+    color: #fff
+    display: flex
+    flex-grow: 1
+    height: 60px
+    justify-content: center
+    max-width: 100px
+    text-decoration: none

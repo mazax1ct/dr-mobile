@@ -1,0 +1,236 @@
+.section
+  margin-bottom: 10px
+
+  &__inner
+    display: none
+
+    &.is-open
+      display: block
+
+.section-opener
+  align-items: center
+  background-color: #1A1A1A
+  border: none
+  cursor: pointer
+  color: #fff
+  display: flex
+  line-height: 19px
+  min-height: 60px
+  position: relative
+  padding-left: 20px
+  padding-right: 40px
+  transition: background-color 0.3s
+  width: 100%
+
+  &::after
+    background-image: url("data:image/svg+xml,%3Csvg width='15' height='9' viewBox='0 0 15 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L7.5 7.5L14 1' stroke='white' stroke-width='2'/%3E%3C/svg%3E%0A")
+    background-repeat: no-repeat
+    background-color: transparent
+    background-position: 0 0
+    content: ''
+    height: 9px
+    left: auto
+    position: absolute
+    right: 17px
+    top: 50%
+    transform: translateY(-50%)
+    width: 15px
+
+  &.is-open
+    background-color: #3C3C3C
+
+.subsection
+  background-color: transparent
+  transition: background-color 0.3s
+
+  &.is-open
+    background-color: #262626
+
+    .subsection__buttons-bar
+      border-bottom-color: transparent
+
+  &__buttons-bar
+    border-bottom: 1px solid #1F1F1F
+    margin-left: 74px
+    padding-bottom: 10px
+    transition: border-color 0.3s
+
+  &__inner
+    background-color: #262626
+    display: none
+    padding-left: 15px
+    padding-right: 15px
+    padding-bottom: 8px
+
+    &.is-open
+      display: block
+
+.subsection-opener
+  align-items: center
+  background-color: #0D0D0D
+  border: none
+  cursor: pointer
+  color: #fff
+  display: flex
+  font-weight: 500
+  min-height: 60px
+  position: relative
+  padding-left: 15px
+  padding-right: 48px
+  text-align: left
+  transition: background-color 0.3s
+  width: 100%
+
+  &__image
+    min-width: 40px
+    width: 40px
+
+  &__info
+    padding-left: 19px
+
+  &__type
+    color: rgba(#fff, 0.33)
+    display: block
+    font-size: 13px
+    line-height: 15px
+
+  &__title
+    display: block
+    font-size: 14px
+    line-height: 16px
+
+  &::after
+    background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect y='8.5' width='18' height='1' fill='%23666666'/%3E%3Crect x='8.5' y='18' width='18' height='1' transform='rotate(-90 8.5 18)' fill='%23666666'/%3E%3C/svg%3E")
+    background-repeat: no-repeat
+    background-color: transparent
+    background-position: 0 50%
+    content: ''
+    height: 18px
+    left: auto
+    position: absolute
+    right: 15px
+    top: 50%
+    transform: translateY(-50%)
+    width: 18px
+
+  &.is-open
+    background-color: #262626
+
+    &::after
+      background-image: url("data:image/svg+xml,%3Csvg width='18' height='2' viewBox='0 0 18 2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect y='0.5' width='18' height='1' fill='white'/%3E%3C/svg%3E%0A")
+
+.list
+  display: flex
+  flex-wrap: wrap
+  margin-left: -5px
+  margin-right: -5px
+
+  &--type_1
+    .component
+      height: 100%
+
+    .component__inner
+      display: flex
+      flex-direction: column
+      height: 100%
+
+    .component__top
+      flex-grow: 1
+
+  &--type_2
+    .list__item
+      flex-direction: column
+      margin-bottom: 0
+
+      .component
+        margin-bottom: 12px
+
+  &__item
+    margin-bottom: 12px
+    padding-left: 5px
+    padding-right: 5px
+    width: 50%
+
+.component
+  cursor: pointer
+  display: block
+
+  &__inner
+    border: 1px solid #2F2F2F
+    background-color: #1C1C1C
+    color: #fff
+
+  input[type="radio"]
+    position: absolute
+    height: 1px
+    overflow: hidden
+    clip: rect(0 0 0 0)
+    width: 1px
+
+    &:checked + .component__inner
+      background-color: #DF4834
+      border-color: #C23F2E
+
+      .component__image
+        opacity: 1
+
+      .component__bottom
+        background-color: #C23F2E
+
+  &__top
+    align-items: center
+    display: flex
+    padding: 4px 8px
+
+  &__image
+    min-width: 40px
+    opacity: 0.3
+    width: 40px
+
+  &__title
+    font-size: 14px
+    line-height: 19px
+    padding-left: 11px
+
+    @media(min-width: 375px)
+      font-size: 16px
+
+  &__bottom
+    background-color: #2F2F2F
+    font-size: 12px
+    line-height: 14px
+    min-height: 48px
+    padding: 11px 12px 9px
+
+.quantity-block
+  display: flex
+
+  &__button
+    align-items: center
+    background: none
+    border: 1px solid #fff
+    cursor: pointer
+    display: flex
+    height: 30px
+    justify-content: center
+    padding: 0
+    width: 30px
+
+    &:first-child
+      border-color: #4D4D4D
+
+      .quantity-block__button-icon
+        fill: #4D4D4D
+
+  &__button-icon
+    fill: #fff
+    height: 14px
+    width: 14px
+
+  &__input
+    background: none
+    border: none
+    color: #fff
+    height: 30px
+    text-align: center
+    width: 40px

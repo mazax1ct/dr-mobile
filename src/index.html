@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Digital Razor - мобильная версия конфигуратора</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+
+  //= template/style.html
+</head>
+
+<body>
+  //= template/sprite.html
+
+  //= template/header.html
+
+  <div class="content">
+    <div class="pc-image"><img src="images/content/img_1.png" alt="Сборка"></div>
+    <div class="section">
+      <button class="js-section-opener section-opener" type="button">Помощь по характеристикам</button>
+      <div class="section__inner">
+        //= template/bars.html
+      </div>
+    </div>
+    <div class="section">
+      <button class="js-section-opener section-opener is-open" type="button">Основные компоненты</button>
+      <div class="section__inner is-open">
+        <div class="subsection">
+          <button class="js-subsection-opener subsection-opener" type="button">
+            <span class="subsection-opener__image"><img src="images/content/img_2.png" alt=""></span>
+            <span class="subsection-opener__info">
+              <span class="subsection-opener__type">Жидкостное охлаждение</span>
+              <span class="subsection-opener__title">Hydro 120</span>
+            </span>
+          </button>
+          <div class="subsection__inner">
+            <div class="list list--type_1">
+              <div class="list__item">
+                <label class="component" for="comp_9">
+                  <input id="comp_9" type="radio" name="cooling" value="Hydro 120" checked>
+                  <div class="component__inner">
+                    <div class="component__top">
+                      <div class="component__image"><img src="images/content/img_2.png" alt="Hydro 120"></div>
+                      <div class="component__title">Hydro 120</div>
+                    </div>
+                    <div class="component__bottom">водное охлаждение</div>
+                  </div>
+                </label>
+              </div>
+              <div class="list__item">
+                <label class="component" for="comp_10">
+                  <input id="comp_10" type="radio" name="cooling" value="Air 120">
+                  <div class="component__inner">
+                    <div class="component__top">
+                      <div class="component__image"><img src="images/content/img_2.png" alt="Air 120"></div>
+                      <div class="component__title">Air 120</div>
+                    </div>
+                    <div class="component__bottom">воздушное охлаждение</div>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <button class="js-subsection-opener subsection-opener is-open" type="button">
+            <span class="subsection-opener__image"><img src="images/content/img_3.png" alt=""></span>
+            <span class="subsection-opener__info">
+              <span class="subsection-opener__type">Процессор</span>
+              <span class="subsection-opener__title">R5 3600X AMD Ryzen 6-и ядерный</span>
+            </span>
+          </button>
+          <div class="subsection__inner is-open">
+            //= template/section.html
+          </div>
+        </div>
+
+        <div class="subsection">
+          <button class="js-subsection-opener subsection-opener" type="button">
+            <span class="subsection-opener__image"><img src="images/content/img_5.png" alt=""></span>
+            <span class="subsection-opener__info">
+              <span class="subsection-opener__type">Оперативная память</span>
+              <span class="subsection-opener__title">16GB, 2x8Gb DDR4 RGB</span>
+            </span>
+          </button>
+          <div class="subsection__buttons-bar">
+            <div class="quantity-block">
+              <button class="quantity-block__button" type="button">
+                <svg class="quantity-block__button-icon" aria-hidden="true">
+                  <use xlink:href="#minus" />
+                </svg>
+              </button>
+              <input class="quantity-block__input" type="text" name="quantity" value="1">
+              <button class="quantity-block__button" type="button">
+                <svg class="quantity-block__button-icon" aria-hidden="true">
+                  <use xlink:href="#plus" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="subsection__inner">
+            <div class="list list--type_1">
+              <div class="list__item">
+                <label class="component" for="comp_11">
+                  <input id="comp_11" type="radio" name="cooling" value="16GB, 2x8Gb DDR4 RGB" checked>
+                  <div class="component__inner">
+                    <div class="component__top">
+                      <div class="component__image"><img src="images/content/img_5.png" alt="16GB, 2x8Gb DDR4 RGB"></div>
+                      <div class="component__title">16GB, 2x8Gb DDR4 RGB</div>
+                    </div>
+                    <div class="component__bottom">Оперативная память</div>
+                  </div>
+                </label>
+              </div>
+              <div class="list__item">
+                <label class="component" for="comp_12">
+                  <input id="comp_12" type="radio" name="cooling" value="32GB, 2x16Gb DDR4 RGB">
+                  <div class="component__inner">
+                    <div class="component__top">
+                      <div class="component__image"><img src="images/content/img_5.png" alt="32GB, 2x16Gb DDR4 RGB"></div>
+                      <div class="component__title">32GB, 2x16Gb DDR4 RGB</div>
+                    </div>
+                    <div class="component__bottom">Оперативная память</div>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  //= template/footer.html
+
+  //= template/scripts.html
+</body>
+
+</html>

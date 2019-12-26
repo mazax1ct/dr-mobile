@@ -1,0 +1,145 @@
+.bars
+  background-color: #262626
+  font-weight: 400
+  padding-bottom: 20px
+
+  &__tab
+    display: none
+    padding-left: 15px
+    padding-right: 15px
+
+    &.is-active
+      display: block
+
+  &__edit
+    font-size: 14px
+    margin-top: 5px
+    padding-left: 15px
+    padding-right: 15px
+    text-align: right
+
+    a
+      color: #fff
+      display: inline-block
+      padding-top: 5px
+      padding-bottom: 5px
+      text-decoration: underline
+
+.bars-nav
+  display: flex
+  justify-content: space-between
+  margin-bottom: 5px
+
+  &__list
+    display: flex
+    font-size: 12px
+    overflow-x: auto
+    padding-left: 15px
+    padding-right: 15px
+
+    @media(min-width: 992px)
+      border-bottom: 1px solid #808080
+      background: none
+      font-size: 14px
+      padding-left: 0
+      padding-right: 0
+
+    @media(min-width: 1400px)
+      font-size: 16px
+
+    &--big
+      @media(min-width: 1400px)
+        min-width: 500px
+
+      @media(min-width: 1600px) and (min-width: 850px)
+        min-width: 634px
+
+      @media(min-width: 1900px) and (min-height: 1000px)
+        font-size: 20px
+
+      .nc__performance-tabs-item
+        @media(min-width: 1400px)
+          margin-right: 45px
+
+    &--small
+      justify-content: flex-end
+
+      @media(min-width: 992px)
+        background: none
+
+  &__item
+    display: flex
+    margin-right: 10px
+
+    &:last-child
+      margin-right: 0
+
+  &__link
+    align-items: center
+    border-bottom: 5px solid transparent
+    color: #fff
+    display: flex
+    min-height: 50px
+    padding-top: 5px
+    transition: border-bottom-color 0.3s
+    text-decoration: none
+    white-space: nowrap
+
+    &.is-active,
+    &:hover
+      border-bottom-color: #D02228
+      text-decoration: none
+
+.perf-bar
+  align-items: center
+  background-color: #424242
+  box-shadow: 0 5px 10px 10px rgba(0,0,0,0.3)
+  color: #fff
+  display: flex
+  justify-content: space-between
+  font-size: 12px
+  height: 30px
+  margin-top: 5px
+  position: relative
+  padding-left: 15px
+  padding-right: 15px
+
+  &__title
+    position: relative
+    z-index: 3
+
+  &__bar
+    background-color: #DF4834
+    height: 100%
+    left: 0
+    position: absolute
+    top: 0
+    z-index: 2
+
+  &__delta
+    align-items: center
+    color: #fff
+    display: flex
+    font-size: 0
+    height: 100%
+    justify-content: flex-end
+    left: 0
+    position: absolute
+    padding-right: 10px
+    top: 0
+    z-index: 1
+
+    &.minus
+      background-color: #7e4640
+
+    &.plus
+      background-color: #487348
+
+  &__value
+    line-height: 1.15
+    position: relative
+    z-index: 3
+
+  &__value-note
+    font-size: 10px
+    opacity: 0.5
