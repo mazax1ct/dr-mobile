@@ -58,6 +58,7 @@ $(document).on('click', '.js-more', function () {
 
 //сохранение конфигурации
 $(document).on('click', '.js-save', function () {
+  popupClose();
   $('body').addClass('overflow');
   $('#config').addClass('is-open');
   $('.footer').addClass('footer--config_open');
@@ -71,7 +72,9 @@ $(document).on('click', '.js-popup-close', function () {
   return false;
 });
 
+//попап с графиками
 $(document).on('click', '.js-graphs', function () {
+  popupClose();
   $('body').addClass('overflow');
   $('#graphs').addClass('is-open');
   back.addEventListener('click', popupClose);
