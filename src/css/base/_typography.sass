@@ -5,6 +5,16 @@ body
   font-weight: 500
   line-height: 1.388
 
+*
+  &:focus
+    outline: none
+
+button,
+input,
+select,
+textarea
+  font-family: 'Roboto', Arial, sans-serif
+
 h1,
 h2,
 h3,
@@ -25,18 +35,26 @@ ol,
 table,
   margin: 0
 
+p
+  margin-bottom: 15px
+
 table
   border-collapse: collapse
+  font-size: 14px
   max-width: 100%
+  margin-top: 30px
+  margin-bottom: 30px
   text-align: left
   width: 100%
 
   th,
   td
     border: none
-    border-bottom: 1px solid
-    padding: 10px
+    padding: 5px 0
     vertical-align: top
+
+  .heading
+    color: #808080
 
 img
   height: auto

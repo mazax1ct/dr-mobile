@@ -41,7 +41,7 @@
     <symbol id="minus" viewBox="0 0 18 18">
       <rect y="8.5" width="18" height="1" />
     </symbol>
-    <symbol id="graphs" viewBox="0 0 22 15">
+    <symbol id="graphs-icon" viewBox="0 0 22 15">
       <rect width="12" height="3" />
       <rect y="6" width="22" height="3" />
       <rect y="12" width="17" height="3" />
@@ -57,7 +57,7 @@
   </svg>
 
   <header class="header">
-    <a class="header__back" href="#">
+    <a class="js-back header__back" href="#">
       <svg class="header__back-icon" aria-hidden="true">
         <use xlink:href="#back" />
       </svg>
@@ -81,107 +81,12 @@
     <div class="section">
       <button class="js-section-opener section-opener" type="button">Помощь по характеристикам</button>
       <div class="section__inner">
-        <div class="bars">
-          <div class="bars-nav">
-            <ul class="js-performance-type bars-nav__list bars-nav__list--big">
-              <li class="bars-nav__item"><a class="bars-nav__link is-active" data-target="games" href="#">Игры</a></li>
-              <li class="bars-nav__item"><a class="bars-nav__link" data-target="content" href="#">Создание контента</a></li>
-            </ul>
-            <ul class="bars-nav__list bars-nav__list--small">
-              <li class="bars-nav__item"><a class="bars-nav__link is-active" href="#">1080P</a></li>
-              <li class="bars-nav__item"><a class="bars-nav__link" href="#">2K</a></li>
-              <li class="bars-nav__item"><a class="bars-nav__link" href="#">4K</a></li>
-            </ul>
-          </div>
-          <div class="bars__tab is-active" data-target="games">
-            <div class="perf-bar">
-              <div class="perf-bar__title">GTA5 (FullHD ULTRA)</div>
-              <div class="perf-bar__bar" style="width: 30%;"></div>
-              <div class="perf-bar__value">
-                <span>43</span> FPS
-                <div class="perf-bar__value-note">больше-лучше</div>
-              </div>
-            </div>
-            <div class="perf-bar">
-              <div class="perf-bar__title">Battlefield 1 (FullHD ULTRA)</div>
-              <div class="perf-bar__bar" style="width: 36%;"></div>
-              <div class="perf-bar__value">
-                <span>70</span> FPS
-                <div class="perf-bar__value-note">больше-лучше</div>
-              </div>
-            </div>
-            <div class="perf-bar">
-              <div class="perf-bar__title">Overwatch (FullHD ULTRA)</div>
-              <div class="perf-bar__bar" style="width: 38%;"></div>
-              <div class="perf-bar__value">
-                <span>72</span> FPS
-                <div class="perf-bar__value-note">больше-лучше</div>
-              </div>
-            </div>
-            <div class="perf-bar">
-              <div class="perf-bar__title">CS:GO (FullHD ULTRA)</div>
-              <div class="perf-bar__bar" style="width: 24%;"></div>
-              <div class="perf-bar__value">
-                <span>110</span> FPS
-                <div class="perf-bar__value-note">больше-лучше</div>
-              </div>
-            </div>
-            <div class="perf-bar">
-              <div class="perf-bar__title">PUBG (FullHD ULTRA)</div>
-              <div class="perf-bar__bar" style="width: 30%;"></div>
-              <div class="perf-bar__value">
-                <span>38</span> FPS
-                <div class="perf-bar__value-note">больше-лучше</div>
-              </div>
-            </div>
-            <div class="perf-bar">
-              <div class="perf-bar__title">GTA5 (FullHD ULTRA)</div>
-              <div class="perf-bar__bar" style="width: 30%;"></div>
-              <div class="perf-bar__value">
-                <span>43</span> FPS
-                <div class="perf-bar__value-note">больше-лучше</div>
-              </div>
-            </div>
-            <div class="perf-bar">
-              <div class="perf-bar__title">Battlefield 1 (FullHD ULTRA)</div>
-              <div class="perf-bar__bar" style="width: 36%;"></div>
-              <div class="perf-bar__value">
-                <span>70</span> FPS
-                <div class="perf-bar__value-note">больше-лучше</div>
-              </div>
-            </div>
-            <div class="perf-bar">
-              <div class="perf-bar__title">Overwatch (FullHD ULTRA)</div>
-              <div class="perf-bar__bar" style="width: 38%;"></div>
-              <div class="perf-bar__value">
-                <span>72</span> FPS
-                <div class="perf-bar__value-note">больше-лучше</div>
-              </div>
-            </div>
-          </div>
-          <div class="bars__tab" data-target="content">
-            <div class="perf-bar">
-              <div class="perf-bar__title">Рендеринг</div>
-              <div class="perf-bar__bar" style="width: 46%;"></div>
-            </div>
-            <div class="perf-bar">
-              <div class="perf-bar__title">Обработка видео H264</div>
-              <div class="perf-bar__bar" style="width: 35%;"></div>
-            </div>
-            <div class="perf-bar">
-              <div class="perf-bar__title">Многозадачность</div>
-              <div class="perf-bar__bar" style="width: 60%;"></div>
-            </div>
-          </div>
-          <div class="bars__edit">
-            <a href="#">Изменить</a>
-          </div>
-        </div>
+        Что-то
       </div>
     </div>
     <div class="section">
-      <button class="js-section-opener section-opener is-open" type="button">Основные компоненты</button>
-      <div class="section__inner is-open">
+      <button class="js-section-opener section-opener" type="button">Основные компоненты</button>
+      <div class="section__inner">
         <div class="subsection">
           <button class="js-subsection-opener subsection-opener" type="button">
             <span class="subsection-opener__image"><img src="images/content/img_2.png" alt=""></span>
@@ -221,14 +126,14 @@
         </div>
 
         <div class="subsection">
-          <button class="js-subsection-opener subsection-opener is-open" type="button">
+          <button class="js-subsection-opener subsection-opener" type="button">
             <span class="subsection-opener__image"><img src="images/content/img_3.png" alt=""></span>
             <span class="subsection-opener__info">
               <span class="subsection-opener__type">Процессор</span>
               <span class="subsection-opener__title">R5 3600X AMD Ryzen 6-и ядерный</span>
             </span>
           </button>
-          <div class="subsection__inner is-open">
+          <div class="subsection__inner">
             <div class="list list--type_2">
               <div class="list__item">
                 <label class="component" for="comp_1">
@@ -345,7 +250,7 @@
             <div class="list list--type_1">
               <div class="list__item">
                 <label class="component" for="comp_11">
-                  <input id="comp_11" type="radio" name="cooling" value="16GB, 2x8Gb DDR4 RGB" checked>
+                  <input id="comp_11" type="radio" name="ram" value="16GB, 2x8Gb DDR4 RGB" checked>
                   <div class="component__inner">
                     <div class="component__top">
                       <div class="component__image"><img src="images/content/img_5.png" alt="16GB, 2x8Gb DDR4 RGB"></div>
@@ -357,7 +262,7 @@
               </div>
               <div class="list__item">
                 <label class="component" for="comp_12">
-                  <input id="comp_12" type="radio" name="cooling" value="32GB, 2x16Gb DDR4 RGB">
+                  <input id="comp_12" type="radio" name="ram" value="32GB, 2x16Gb DDR4 RGB">
                   <div class="component__inner">
                     <div class="component__top">
                       <div class="component__image"><img src="images/content/img_5.png" alt="32GB, 2x16Gb DDR4 RGB"></div>
@@ -370,6 +275,410 @@
             </div>
           </div>
         </div>
+
+        <div class="subsection">
+          <button class="js-subsection-opener subsection-opener" type="button">
+            <span class="subsection-opener__image"><img src="images/content/img_6.png" alt="NVIDIA GeForce GTX 1660 Ti Super"></span>
+            <span class="subsection-opener__info">
+              <span class="subsection-opener__type">Видеокарта</span>
+              <span class="subsection-opener__title">NVIDIA GeForce GTX 1660 Ti <span class="green">Super</span></span>
+            </span>
+          </button>
+          <div class="subsection__buttons-bar">
+            <div class="brige">
+              <button class="js-brige-button brige__button" type="button">Single</button>
+              <button class="js-brige-button brige__button is-active" type="button">Crossfire</button>
+            </div>
+          </div>
+          <div class="subsection__inner">
+            <div class="list list--type_1">
+              <div class="list__item">
+                <label class="component" for="comp_13">
+                  <input id="comp_13" type="radio" name="video" value="NVIDIA GeForce GTX 1660 Ti Super" checked>
+                  <div class="component__inner">
+                    <div class="component__top">
+                      <div class="component__image"><img src="images/content/img_6.png" alt="NVIDIA GeForce GTX 1660 Ti Super"></div>
+                      <div class="component__title">NVIDIA GeForce GTX 1660 Ti <span class="green">Super</span></div>
+                    </div>
+                    <div class="component__bottom">Видеокарта</div>
+                  </div>
+                </label>
+              </div>
+              <div class="list__item">
+                <label class="component" for="comp_14">
+                  <input id="comp_14" type="radio" name="video" value="RX580 AMD Radeon 8GB" checked>
+                  <div class="component__inner">
+                    <div class="component__top">
+                      <div class="component__image"><img src="images/content/img_9.png" alt="RX580 AMD Radeon 8GB"></div>
+                      <div class="component__title">RX580 AMD Radeon 8GB</div>
+                    </div>
+                    <div class="component__bottom">Видеокарта</div>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <button class="js-subsection-opener subsection-opener" type="button">
+            <span class="subsection-opener__image"><img src="images/content/img_7.png" alt="B450"></span>
+            <span class="subsection-opener__info">
+              <span class="subsection-opener__type">Системная плата</span>
+              <span class="subsection-opener__title">B450</span>
+            </span>
+          </button>
+          <div class="subsection__inner">
+            <div class="list list--type_1">
+              <div class="list__item">
+                <label class="component" for="comp_15">
+                  <input id="comp_15" type="radio" name="mb" value="B450" checked>
+                  <div class="component__inner">
+                    <div class="component__top">
+                      <div class="component__image"><img src="images/content/img_7.png" alt="B450"></div>
+                      <div class="component__title">B450</div>
+                    </div>
+                    <div class="component__bottom">Системная плата</div>
+                  </div>
+                </label>
+              </div>
+              <div class="list__item">
+                <label class="component" for="comp_16">
+                  <input id="comp_16" type="radio" name="mb" value="X570">
+                  <div class="component__inner">
+                    <div class="component__top">
+                      <div class="component__image"><img src="images/content/img_7.png" alt="X570"></div>
+                      <div class="component__title">X570</div>
+                    </div>
+                    <div class="component__bottom">Системная плата</div>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <button class="js-subsection-opener subsection-opener" type="button">
+            <span class="subsection-opener__image"><img src="images/content/img_8.png" alt=""></span>
+            <span class="subsection-opener__info">
+              <span class="subsection-opener__type">SSD накопитель</span>
+              <span class="subsection-opener__title">240Gb</span>
+            </span>
+          </button>
+          <div class="subsection__buttons-bar">
+            <div class="quantity-block">
+              <button class="quantity-block__button" type="button">
+                <svg class="quantity-block__button-icon" aria-hidden="true">
+                  <use xlink:href="#minus" />
+                </svg>
+              </button>
+              <input class="quantity-block__input" type="text" name="quantity" value="1">
+              <button class="quantity-block__button" type="button">
+                <svg class="quantity-block__button-icon" aria-hidden="true">
+                  <use xlink:href="#plus" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="subsection__inner">
+            <div class="list list--type_1">
+              <div class="list__item">
+                <label class="component" for="comp_17">
+                  <input id="comp_17" type="radio" name="ram" value="240Gb" checked>
+                  <div class="component__inner">
+                    <div class="component__top">
+                      <div class="component__image"><img src="images/content/img_8.png" alt="240Gb"></div>
+                      <div class="component__title">240Gb</div>
+                    </div>
+                    <div class="component__bottom">SSD накопитель</div>
+                  </div>
+                </label>
+              </div>
+              <div class="list__item">
+                <label class="component" for="comp_18">
+                  <input id="comp_18" type="radio" name="ram" value="480Gb">
+                  <div class="component__inner">
+                    <div class="component__top">
+                      <div class="component__image"><img src="images/content/img_8.png" alt="480Gb"></div>
+                      <div class="component__title">480Gb</div>
+                    </div>
+                    <div class="component__bottom">SSD накопитель</div>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <button class="js-section-opener section-opener" type="button">Дополнительные компоненты</button>
+      <div class="section__inner">
+        Тут что-то будет!!!
+      </div>
+    </div>
+    <div class="section">
+      <button class="js-section-opener section-opener" type="button">Аксессуары</button>
+      <div class="section__inner">
+        <div class="subsection">
+          <button class="js-subsection-opener subsection-opener" type="button">
+            <span class="subsection-opener__image"><img src="images/content/img_10.png" alt=""></span>
+            <span class="subsection-opener__info">
+              <span class="subsection-opener__type">Мониторы</span>
+              <span class="subsection-opener__title">Не выбрано</span>
+            </span>
+          </button>
+          <div class="subsection__inner">
+            <div class="tabs-nav">
+              <ul class="js-tabs tabs-nav__list">
+                <li class="tabs-nav__list-item"><a class="tabs-nav__list-link is-active" href="#" data-target="1">ASUS</a></li>
+                <li class="tabs-nav__list-item"><a class="tabs-nav__list-link" href="#" data-target="2">Razer</a></li>
+                <li class="tabs-nav__list-item"><a class="tabs-nav__list-link" href="#" data-target="3">Corsair</a></li>
+                <li class="tabs-nav__list-item"><a class="tabs-nav__list-link" href="#" data-target="4">Kingston</a></li>
+              </ul>
+              <button class="tabs-nav__clear" type="button">Очистить</button>
+            </div>
+            <div class="tab is-open" data-target="1">
+              <div class="list list--type_1">
+                <div class="list__item">
+                  <label class="component" for="comp_19">
+                    <input id="comp_19" type="radio" name="monitor" value="Монитор">
+                    <div class="component__inner">
+                      <div class="component__top">
+                        <div class="component__image"><img src="images/content/img_10.png" alt="Монитор"></div>
+                        <div class="component__title">Монитор</div>
+                      </div>
+                      <div class="component__bottom">
+                        Монитор<br>
+                        <!--перенос в конце названия добавляется только при наличии ссылки на подробное описание-->
+                        <button class="js-more component__more" type="button" data-target="more_1">Подробнее</button>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                <div class="list__item">
+                  <label class="component" for="comp_20">
+                    <input id="comp_20" type="radio" name="monitor" value="Монитор">
+                    <div class="component__inner">
+                      <div class="component__top">
+                        <div class="component__image"><img src="images/content/img_10.png" alt="Монитор"></div>
+                        <div class="component__title">Монитор</div>
+                      </div>
+                      <div class="component__bottom">
+                        Монитор<br>
+                        <!--перенос в конце названия добавляется только при наличии ссылки на подробное описание-->
+                        <button class="js-more component__more" type="button" data-target="more_1">Подробнее</button>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="tab" data-target="2">Другая вкладка 2</div>
+            <div class="tab" data-target="3">Другая вкладка 3</div>
+            <div class="tab" data-target="4">Другая вкладка 4</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="more_1" class="popup popup--light">
+    <div class="popup__inner">
+      <p class="popup__title">ASUS TUF Gaming K5 Keyboard</p>
+      <p>ASUS TUF Gaming K5 Keyboard - в клавиатуре сочетаются бескомпромиссное удобство и исключительная надежность.</p>
+      <p>Благодаря особой конструкции переключателей Mech-Brane каждое нажатие на клавиши ощущается максимально отчетливо, а корпус обра ботан износостойким покрытием и защищен от попадания влаги – долговечность гарантирована!</p>
+      <table>
+        <tr>
+          <td class="heading">Тип переключателей</td>
+          <td>mech</td>
+        </tr>
+        <tr>
+          <td class="heading">Подсветка RGB</td>
+          <td>есть</td>
+        </tr>
+        <tr>
+          <td class="heading">Количество клавиш</td>
+          <td>110</td>
+        </tr>
+        <tr>
+          <td class="heading">Частота опроса</td>
+          <td>1000Hz</td>
+        </tr>
+        <tr>
+          <td class="heading">Срок службы</td>
+          <td>5 млн.</td>
+        </tr>
+        <tr>
+          <td class="heading">Вес клавиатуры</td>
+          <td>1050 г</td>
+        </tr>
+        <tr>
+          <td class="heading">Интерфейс подключения</td>
+          <td>USB</td>
+        </tr>
+        <tr>
+          <td class="heading">Гарантии от производителя</td>
+          <td>1 год</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  
+  <div id="config" class="popup">
+    <div class="popup__inner">
+      <p class="popup__title">Итоговая конфигурация</p>
+      <p class="popup__note">Проверьте конфигурацию перед оформлением заказа:</p>
+      <p class="config-title"><span>Игровой компьютер:</span> <span>1 шт.</span></p>
+      <table>
+        <tr>
+          <td class="heading">Процессор:</td>
+          <td>4-ядерный Intel Core i3-9100F 3.60 GHz</td>
+        </tr>
+        <tr>
+          <td class="heading">Кулер:</td>
+          <td>Воздушная система охлаждения</td>
+        </tr>
+        <tr>
+          <td class="heading">Сист. плата:</td>
+          <td>Материнская плата B360M</td>
+        </tr>
+        <tr>
+          <td class="heading">Опер. память:</td>
+          <td>8GB (2x4Gb) DDR4 2400Mhz</td>
+        </tr>
+        <tr>
+          <td class="heading">Видеокарта:</td>
+          <td>NVIDIA GeForce GTX 1660 6G</td>
+        </tr>
+        <tr>
+          <td class="heading">SSD накопитель:</td>
+          <td>SSD 240GB - x1</td>
+        </tr>
+        <tr>
+          <td class="heading">НDD накопитель:</td>
+          <td>Жесткий диск 1TB - x1</td>
+        </tr>
+        <tr>
+          <td class="heading">Корпус:</td>
+          <td>Cooler Master MasterBox Q300L</td>
+        </tr>
+        <tr>
+          <td class="heading">Блок питания:</td>
+          <td>500W Plus</td>
+        </tr>
+      </table>
+      <p class="config-title"><span>СЕРВИС И ГАРАНТИЯ:</span> <span>1 шт.</span></p>
+      <div class="service-guarantee">
+        <p><span class="color-grey">Гарантия:</span> Базовая гарантия 12 месяцев</p>
+        <p>Бесплатный гарантийный ремонт и удаленная диагностика неисправности в течение 12 месяцев. Затраты на транспортировку до сервисного центра оплачивает покупатель</p>
+        <p><span class="color-grey">Дополнительная упаковка:</span> Стандартная упаковка</p>
+      </div>
+      <p class="config-total">
+        <span class="config-total__text">Итого:</span>
+        <span class="config-total__cost">70 000 <span class="config-total__currency">р.</span></span>
+      </p>
+    </div>
+  </div>
+  
+  <div id="graphs" class="popup popup--light">
+    <div class="popup__inner">
+      <div class="bars">
+        <div class="bars-nav">
+          <ul class="js-performance-type bars-nav__list bars-nav__list--big">
+            <li class="bars-nav__item"><a class="bars-nav__link is-active" data-target="games" href="#">Игры</a></li>
+            <li class="bars-nav__item"><a class="bars-nav__link" data-target="content" href="#">Создание контента</a></li>
+          </ul>
+          <ul class="bars-nav__list bars-nav__list--small">
+            <li class="bars-nav__item"><a class="bars-nav__link is-active" href="#">1080P</a></li>
+            <li class="bars-nav__item"><a class="bars-nav__link" href="#">2K</a></li>
+            <li class="bars-nav__item"><a class="bars-nav__link" href="#">4K</a></li>
+          </ul>
+        </div>
+        <div class="bars__tab is-open" data-target="games">
+          <div class="perf-bar">
+            <div class="perf-bar__title">GTA5 (FullHD ULTRA)</div>
+            <div class="perf-bar__bar" style="width: 30%;"></div>
+            <div class="perf-bar__value">
+              <span>43</span> FPS
+              <div class="perf-bar__value-note">больше-лучше</div>
+            </div>
+          </div>
+          <div class="perf-bar">
+            <div class="perf-bar__title">Battlefield 1 (FullHD ULTRA)</div>
+            <div class="perf-bar__bar" style="width: 36%;"></div>
+            <div class="perf-bar__value">
+              <span>70</span> FPS
+              <div class="perf-bar__value-note">больше-лучше</div>
+            </div>
+          </div>
+          <div class="perf-bar">
+            <div class="perf-bar__title">Overwatch (FullHD ULTRA)</div>
+            <div class="perf-bar__bar" style="width: 38%;"></div>
+            <div class="perf-bar__value">
+              <span>72</span> FPS
+              <div class="perf-bar__value-note">больше-лучше</div>
+            </div>
+          </div>
+          <div class="perf-bar">
+            <div class="perf-bar__title">CS:GO (FullHD ULTRA)</div>
+            <div class="perf-bar__bar" style="width: 24%;"></div>
+            <div class="perf-bar__value">
+              <span>110</span> FPS
+              <div class="perf-bar__value-note">больше-лучше</div>
+            </div>
+          </div>
+          <div class="perf-bar">
+            <div class="perf-bar__title">PUBG (FullHD ULTRA)</div>
+            <div class="perf-bar__bar" style="width: 30%;"></div>
+            <div class="perf-bar__value">
+              <span>38</span> FPS
+              <div class="perf-bar__value-note">больше-лучше</div>
+            </div>
+          </div>
+          <div class="perf-bar">
+            <div class="perf-bar__title">GTA5 (FullHD ULTRA)</div>
+            <div class="perf-bar__bar" style="width: 30%;"></div>
+            <div class="perf-bar__value">
+              <span>43</span> FPS
+              <div class="perf-bar__value-note">больше-лучше</div>
+            </div>
+          </div>
+          <div class="perf-bar">
+            <div class="perf-bar__title">Battlefield 1 (FullHD ULTRA)</div>
+            <div class="perf-bar__bar" style="width: 36%;"></div>
+            <div class="perf-bar__value">
+              <span>70</span> FPS
+              <div class="perf-bar__value-note">больше-лучше</div>
+            </div>
+          </div>
+          <div class="perf-bar">
+            <div class="perf-bar__title">Overwatch (FullHD ULTRA)</div>
+            <div class="perf-bar__bar" style="width: 38%;"></div>
+            <div class="perf-bar__value">
+              <span>72</span> FPS
+              <div class="perf-bar__value-note">больше-лучше</div>
+            </div>
+          </div>
+        </div>
+        <div class="bars__tab" data-target="content">
+          <div class="perf-bar">
+            <div class="perf-bar__title">Рендеринг</div>
+            <div class="perf-bar__bar" style="width: 46%;"></div>
+          </div>
+          <div class="perf-bar">
+            <div class="perf-bar__title">Обработка видео H264</div>
+            <div class="perf-bar__bar" style="width: 35%;"></div>
+          </div>
+          <div class="perf-bar">
+            <div class="perf-bar__title">Многозадачность</div>
+            <div class="perf-bar__bar" style="width: 60%;"></div>
+          </div>
+        </div>
+        <div class="bars__edit">
+          <a class="js-popup-close" href="#">Изменить</a>
+        </div>
       </div>
     </div>
   </div>
@@ -379,17 +688,23 @@
       <p class="footer__price">70 000 <span class="footer__price-currency">р.</span></p>
       <p class="footer__month-price">4 375 руб./мес</p>
     </div>
-    <button class="footer__button footer__button--graphs" type="button">
+    <button class="js-config-edit footer__button footer__button--edit" type="button">
       <svg class="footer__button-icon" aria-hidden="true">
-        <use xlink:href="#graphs" />
+        <use xlink:href="#edit" />
       </svg>
     </button>
-    <button class="footer__button footer__button--save" type="button">
+    <button class="js-graphs footer__button footer__button--graphs" type="button">
+      <svg class="footer__button-icon" aria-hidden="true">
+        <use xlink:href="#graphs-icon" />
+      </svg>
+    </button>
+    <button class="js-save footer__button footer__button--save" type="button">
       <svg class="footer__button-icon" aria-hidden="true">
         <use xlink:href="#save" />
       </svg>
     </button>
-    <a class="footer__buy-button" href="#">Купить</a>
+    <a class="footer__buy-button js-add2cart" href="#">Купить</a>
+    <a class="footer__buy-button js-make-order" href="#">Оформить заказ</a>
   </footer>
 
   <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
