@@ -17,6 +17,45 @@
   &--light
     background-color: #272727
 
+  &--transaprent
+    background-color: rgba(#000, 0.8)
+    overflow-y: auto
+    padding-bottom: 0
+    padding-top: 0
+    z-index: 6
+
+    .popup__inner
+      background-color: #191919
+      height: auto
+      min-height: calc(100% - 120px)
+      overflow-y: visible
+
+  &__close
+    align-items: center
+    background-color: #DF4834
+    border: none
+    cursor: pointer
+    display: flex
+    justify-content: center
+    height: 60px
+    left: auto
+    position: absolute
+    right: 0
+    top: 0
+    width: 60px
+
+  &__close-icon
+    fill: none
+    height: 18px
+    stroke: #fff
+    width: 18px
+
+  &__top
+    height: 60px
+
+  &__bottom
+    height: 60px
+
   &__inner
     height: 100%
     overflow-y: auto
@@ -84,3 +123,59 @@
 
   &__currency
     color: #666
+    font-size: 50%
+
+.save-link
+  align-items: center
+  color: #fff
+  display: flex
+  font-weight: 500
+  padding-top: 10px
+  padding-bottom: 10px
+  text-decoration: none
+
+  &:not(:last-child)
+    border-bottom: 1px solid #303030
+
+  &__icon
+    fill: none
+    height: 52px
+    margin-right: 25px
+    width: 52px
+
+.constant-link
+  border-bottom: 1px solid #303030
+  color: #fff
+  display: block
+  font-size: 15px
+  padding-bottom: 15px
+  padding-right: 45px
+  position: relative
+  text-decoration: none
+
+  &__text
+    display: block
+    overflow: hidden
+    text-overflow: ellipsis
+    white-space: nowrap
+
+  &__icon
+    fill: #DF4834
+    height: 24px
+    left: auto
+    position: absolute
+    right: 10px
+    top: 50%
+    transform: translateY(-19px)
+    width: 20px
+
+.popup-form
+  &__label
+    display: block
+    margin-bottom: 15px
+
+  &__textarea
+    height: 190px
+
+  &__button
+    width: 280px

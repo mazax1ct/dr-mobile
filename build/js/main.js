@@ -56,11 +56,11 @@ $(document).on('click', '.js-more', function () {
   return false;
 });
 
-//сохранение конфигурации
-$(document).on('click', '.js-save', function () {
+//покупка конфигурации
+$(document).on('click', '.js-buy', function () {
   popupClose();
   $('body').addClass('overflow');
-  $('#config').addClass('is-open');
+  $('#config-popup').addClass('is-open');
   $('.footer').addClass('footer--config_open');
   back.addEventListener('click', popupClose);
   return false;
@@ -76,7 +76,29 @@ $(document).on('click', '.js-popup-close', function () {
 $(document).on('click', '.js-graphs', function () {
   popupClose();
   $('body').addClass('overflow');
-  $('#graphs').addClass('is-open');
+  $('#graphs-popup').addClass('is-open');
   back.addEventListener('click', popupClose);
+  return false;
+});
+
+//сохранение конфигурации
+$(document).on('click', '.js-save', function () {
+  popupClose();
+  $('body').addClass('overflow');
+  $('#save-popup').addClass('is-open');
+  return false;
+});
+
+$(document).on('click', '.js-send2mail', function () {
+  popupClose();
+  $('body').addClass('overflow');
+  $('#save-popup2').addClass('is-open');
+  return false;
+});
+
+$(document).on('click', '.js-make-link', function () {
+  popupClose();
+  $('body').addClass('overflow');
+  $('#save-popup3').addClass('is-open');
   return false;
 });

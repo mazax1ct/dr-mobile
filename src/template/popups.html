@@ -40,7 +40,7 @@
   </div>
 </div>
 
-<div id="config" class="popup">
+<div id="config-popup" class="popup">
   <div class="popup__inner">
     <p class="popup__title">Итоговая конфигурация</p>
     <p class="popup__note">Проверьте конфигурацию перед оформлением заказа:</p>
@@ -91,12 +91,12 @@
     </div>
     <p class="config-total">
       <span class="config-total__text">Итого:</span>
-      <span class="config-total__cost">70 000 <span class="config-total__currency">р.</span></span>
+      <span class="config-total__cost">70 000 <span class="config-total__currency">руб.</span></span>
     </p>
   </div>
 </div>
 
-<div id="graphs" class="popup popup--light">
+<div id="graphs-popup" class="popup popup--light">
   <div class="popup__inner">
     <div class="bars">
       <div class="bars-nav">
@@ -195,4 +195,87 @@
       </div>
     </div>
   </div>
+</div>
+
+<div id="save-popup" class="popup popup--transaprent">
+  <div class="popup__top">
+    <button class="js-popup-close popup__close" type="button">
+      <svg class="popup__close-icon" aria-hidden="true">
+        <use xlink:href="#close" />
+      </svg>
+    </button>
+  </div>
+  <div class="popup__inner">
+    <p class="popup__title">СОХРАНЕНИЕ<br> КОНФИГУРАЦИИ:</p>
+    <p class="popup__note">Сохраните Вашу конфигурацию, что бы не потерять информацию или вернуться к ней позднее.</p>
+    <p class="popup__note">Рекомендуем отправить конфигурацию на электронную почту. Если Вы зарегистрированы на сайте, она будет доступна в личном кабинете.</p>
+    <a class="save-link" href="javascript:void(0)">
+      <svg class="save-link__icon" aria-hidden="true">
+        <use xlink:href="#save-pdf" />
+      </svg>
+      Сохранить конфигурацию<br> в PDF файл
+    </a>
+    <a class="js-send2mail save-link" href="javascript:void(0)">
+      <svg class="save-link__icon" aria-hidden="true">
+        <use xlink:href="#send-email" />
+      </svg>
+      Отправить конфигурацию<br> на почту
+    </a>
+    <a class="js-make-link save-link" href="javascript:void(0)">
+      <svg class="save-link__icon" aria-hidden="true">
+        <use xlink:href="#make-link" />
+      </svg>
+      Создать постоянную ссылку
+    </a>
+  </div>
+  <div class="popup__bottom"></div>
+</div>
+
+<div id="save-popup2" class="popup popup--transaprent">
+  <div class="popup__top">
+    <button class="js-popup-close popup__close" type="button">
+      <svg class="popup__close-icon" aria-hidden="true">
+        <use xlink:href="#close" />
+      </svg>
+    </button>
+  </div>
+  <div class="popup__inner">
+    <p class="popup__title">ССЫЛКА НА КОНФИГУРАЦИЮ</p>
+    <p class="popup__note">Конфигурация успешно сохранена и доступна по постоянной ссылке</p>
+    <p>
+      <a class="constant-link" href="javascript:void(0)">
+        <span class="constant-link__text">https://digital-razor.ru/configurator/883258/</span>
+        <svg class="constant-link__icon" aria-hidden="true">
+          <use xlink:href="#copy" />
+        </svg>
+      </a>
+    </p>
+  </div>
+  <div class="popup__bottom"></div>
+</div>
+
+<div id="save-popup3" class="popup popup--transaprent">
+  <div class="popup__top">
+    <button class="js-popup-close popup__close" type="button">
+      <svg class="popup__close-icon" aria-hidden="true">
+        <use xlink:href="#close" />
+      </svg>
+    </button>
+  </div>
+  <div class="popup__inner">
+    <p class="popup__title">ОТПРАВИТЬ КОНФИГУРАЦИЮ НА ПОЧТУ</p>
+    <p class="popup__note">Вы можете отправить ссылку на конфигурацию себе на электронную почту.</p>
+    <form class="popup-form" action="">
+      <label class="popup-form__label" for="email">
+        <input class="input" id="email" type="text" placeholder="E-mail">
+      </label>
+      <label class="popup-form__label" for="comment">
+        <textarea class="popup__form-textarea textarea" id="comment" placeholder="Ваш вопрос или комментарий"></textarea>
+      </label>
+      <div class="popup-form__buttons">
+        <button class="popup-form__button button button--red" type="submit">Отправить</button>
+      </div>
+    </form>
+  </div>
+  <div class="popup__bottom"></div>
 </div>

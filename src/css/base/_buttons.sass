@@ -1,31 +1,29 @@
 .button
-  background-color: #00c220
-  border: none
-  border-radius: 5px
+  align-items: center
+  background: none
+  border: 1px solid #DF4834
   color: #fff
   cursor: pointer
-  display: inline-block
-  font-family: inherit
-  font-size: inherit
+  display: inline-flex
+  font-weight: 400
+  justify-content: center
   line-height: 18px
-  padding: 11px 14px
+  min-height: 40px
+  min-width: 120px
+  padding: 8px 9px 9px
   text-decoration: none
   text-align: center
   vertical-align: middle
 
-  &:hover,
-  &:active
-    background-color: #00d123
-    color: #fff
+  &:hover
+    text-decoration: none
 
-  &:focus
-    box-shadow: 0 0 5px 2px #00d123
-    outline: 1px dotted #000
-
-  &:disabled,
-  &.disabled
+  &.disabled,
+  &:disabled
     cursor: default
-    opacity: 0.5
 
-    &:focus
-      outline: none
+  &--red
+    background-color: #DF4834
+
+  &--blue
+    background-color: #2680EB
