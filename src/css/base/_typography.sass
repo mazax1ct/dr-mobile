@@ -9,6 +9,9 @@ body
   &:focus
     outline: none
 
+a
+  color: #DF4834
+
 button,
 input,
 select,
@@ -38,7 +41,8 @@ table,
 p
   margin-bottom: 15px
 
-table
+table,
+.dr-smart-config-element-badge-wrap
   border-collapse: collapse
   font-size: 14px
   max-width: 100%
@@ -55,6 +59,23 @@ table
 
   .heading
     color: #808080
+
+.dr-smart-config-element-badge-wrap
+
+  & > div
+    display: flex
+    flex-direction: row-reverse
+    justify-content: flex-end
+
+    & > div
+      padding: 5px 0
+
+      &:first-child
+        flex-basis: 70px
+
+      &:last-child
+        color: #808080
+        flex-grow: 1
 
 img
   height: auto
